@@ -30,32 +30,35 @@ temps = ([13.6, 13.4, 13.2, 13.4, 13.9, 13.7, 13.7, 13.8, 14.0, 14.3, 16.0, 15.1
 
 temps_mitjana = [14.0, 14.1, 14.2, 14.1, 14.4, 14.9, 14.4, 14.4, 14.1, 14.5, 14.7, 14.8,
                  14.1, 14.6, 14.9, 14.7, 14.1, 14.8, 14.7, 14.7, 14.9, 14.8, 14.0, 14.6]
-print(len(temps[1: 23]))
+
 maxima2022 = 0
 minima2022 = 100
 any2022 = temps[0]
+tempsuma2022 = 0
 
 for n in any2022:
     if maxima2022 < n:
         maxima2022 = n
     if minima2022 > n:
         minima2022 = n
-    tempsuma2022 =+ n
+    tempsuma2022 += n
 
-temps_mitjana2022 = tempsuma2022 / len(any2022)
+temps_mitjana2022 = round(tempsuma2022 / len(any2022), 1)
 
 print("- Any 2022:\n   - Màxima:", maxima2022, "\n   - Mínima:", minima2022, "\n   - Mitjana: ", temps_mitjana2022)
 
 maxima2000 = 0
 minima2000 = 100
-for f in temps[1: 23]:
+tempsuma = 0
+
+for f in range(len(temps)):
     for i in temps[f]:
         if maxima2000 < i:
             maxima2000 = i
         if minima2000 > i:
             minima2000 = i
-    tempsuma =+ i
+        tempsuma += i
 
-temps_mitjana2000 = tempsuma/len(temps_mitjana)
+temps_mitjana2000 = round(tempsuma/len(temps[0]*len(temps)), 1)
 
-print("- Període 2000 a 2022:\n   - Màxima:", maxima2000, "\n   - Mínima:", minima2000, "\n   - Mitjana: ", temps_mitjana[0])
+print("\n- Període 2000 a 2022:\n   - Màxima:", maxima2000, "\n   - Mínima:", minima2000, "\n   - Mitjana: ", temps_mitjana2000)
