@@ -45,7 +45,7 @@ for n in any2022:
 
 temps_mitjana2022 = round(tempsuma2022 / len(any2022), 1)
 
-print("- Any 2022:\n   - Màxima:", maxima2022, "\n   - Mínima:", minima2022, "\n   - Mitjana: ", temps_mitjana2022)
+print("- Any 2022:\n   - Màxima:", maxima2022, "\n   - Mínima:", minima2022, "\n   - Mitjana:", temps_mitjana2022)
 
 maxima2000 = 0
 minima2000 = 100
@@ -61,4 +61,5 @@ for f in range(len(temps)):
 
 temps_mitjana2000 = round(tempsuma/len(temps[0]*len(temps)), 1)
 
-print("\n- Període 2000 a 2022:\n   - Màxima:", maxima2000, "\n   - Mínima:", minima2000, "\n   - Mitjana: ", temps_mitjana2000)
+print("\n- Període 2000 a 2022:\n   - Màxima:", maxima2000, "\n   - Mínima:", minima2000,
+      "\n   - Mitjana:", temps_mitjana2000)
