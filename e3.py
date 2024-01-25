@@ -18,11 +18,16 @@ insults = [["IMBÈCIL", "IDIOTA", "ESTUPID", "MOCÓS", "TONTO", "PIXAPINS", "POC
 
 insult = str.upper(input())
 
-if insult in insults[0] or insult in insults[1] or insult in insults[2] or insult in insults[3]:
+cat = insults[0]
+cast = insults[1]
+ang = [2]
+kli = [3]
+
+if insult in cat or insult in cast or insult in ang or insult in kli:
     for n in range(len(insults)):
         for m in range(len(insults[n])):
-            if insult == str(insults[n][m]):
-                print("\n", insults[0][m], "\n", insults[1][m], "\n", insults[2][m], "\n", insults[3][m])
+            if insult == insults[n][m]:
+                print("\n", cat[m], "\n", cast[m], "\n", ang[m], "\n", kli[m])
 
 else:
     print("palabra no encontrada")
