@@ -20,14 +20,14 @@ insult = str.upper(input())
 
 cat = insults[0]
 cast = insults[1]
-ang = [2]
-kli = [3]
+ang = insults[2]
+kli = insults[3]
 
 if insult in cat or insult in cast or insult in ang or insult in kli:
     for n in range(len(insults)):
         for m in range(len(insults[n])):
             if insult == insults[n][m]:
-                print("\n", cat[m], "\n", cast[m], "\n", ang[m], "\n", kli[m])
+                print("\n", insults[n+1][m], "\n", insults[n+2][m], "\n", insults[n+3][m])
 
 else:
     print("palabra no encontrada")
