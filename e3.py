@@ -37,3 +37,4 @@ if insult in cat or insult in cast or insult in ang or insult in kli:
 
 else:
     print("palabra no encontrada")
+
